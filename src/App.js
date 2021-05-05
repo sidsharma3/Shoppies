@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     setResultsLoading(true)
-    axios.get(`http://www.omdbapi.com/?s=${searchWords}&apikey=6cbaeff6`)
+    axios.get(`https://www.omdbapi.com/?s=${searchWords}&apikey=6cbaeff6`)
     .then(res => {
       if (res.data.Response !== "False") {
         const searchedMovies = [...res.data.Search]
