@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+html, body {
+  margin:0;  
+  padding:0;
+  min-height:100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body,
+.notification-parent,
+.notification-title,
+.notification-message,
+.notification-item {
+  font-family: 'Poppins', sans-serif;
+}
+
+.loading, .nomination, .movie, .movies, .container, .landing, .app, .react-reveal, .searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  height: 100%;
+}
+
+.react-reveal {
+  height: 100vh;
+  width: 100%;
+}
+
+.landing {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  flex-direction: column;
+}
+
+.landing h1 {
+  font-family: 'Roboto', black;
+  color: white;
+  font-size: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.landing p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  width: 75%;
+  text-align: center;
+}
+
+.landing span {
+  font-family: 'Roboto', black;
+  color: white;
+  font-size: 35px;
+}
+
+.container {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  border-radius: 35px;
+  padding: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.movieContainer h1 {
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.movies {
+  flex-wrap: wrap;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.movie {
+  background: white;
+  margin: 10px;
+  width: 250px;
+  height: 600px;
+  border-radius: 10px;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+.movie h2 {
+  margin-top: 0px;
+}
+
+.movie h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nomination h2 {
+  margin-top: 0px;
+}
+
+.nomination h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
+}
+
+.nominationContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 25px;
+  background-color: green;
+  border-radius: 15px;
+}
+
+.nominationContainer h1 {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+  text-align: center;
+}
+
+.nominations {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.nomination {
+  background: white;
+  margin: 5px;
+  width: 250px;
+  height: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.explanation {
+  text-align: center;
+}
+
+.searchBar {
+  padding: 10px;
+  width: 1000px;
+  box-sizing: border-box;
+  background-color: green;
+  border-radius: 15px;
+}
+
+input {
+  width: 90%;
+  margin: 10px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.movie button {
+  background-color: green;
+  margin: 10px;
+  height: 75px;
+  width: 150px;
+  border-radius: 12px;
+  color: black;
+  font-size: 20px;
+}
+
+.landing button {
+  width: 225px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.nomination button {
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 150;
+}
+
+.searchBar button {
+  border-radius: 12px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.searchBar button:disabled {
+  color: grey;
+}
+
+.loading {  
+  flex-direction: column;
+}
+.spinner {
+  border: 20px solid black;
+  border-radius: 50%;
+  border-top: 20px solid green;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
